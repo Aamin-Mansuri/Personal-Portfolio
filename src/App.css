@@ -1,0 +1,69 @@
+body{
+    background-color: #fffbeb;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+*{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+  animation: NavJump 0.5s ease-in forwards;
+    
+}
+
+@keyframes NavJump {
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity:1;
+  }
+}
+
+#web{
+    
+    border-right: black 2px solid;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: Letter 4s infinite steps(14) alternate-reverse,  blink .7s infinite linear ;
+    
+}
+
+@keyframes Letter {
+    from{      
+        
+       width: 0px;
+    }
+    to{
+        
+        width: 738px;
+    }
+}
+
+@keyframes blink{
+      50%{
+       
+        border-color: transparent;
+      }
+}
+#orange,
+#para,
+#helo{
+  animation: entry 1s ease;
+}
+
+@keyframes entry{
+  from{
+    opacity: 0;
+    transform: translateX(-45px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
