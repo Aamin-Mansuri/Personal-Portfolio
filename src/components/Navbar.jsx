@@ -4,9 +4,9 @@ import resume from '../assets/resume.pdf'
 
 const Navbar = () => {
   return (
-    <div id='navbar' data-aos="fade-down" className='flex flex-col lg:flex-row justify-between items-center px-5 lg:px-10 py-5 bg-amber-50 gap-5 '>
+    <div id='navbar' data-aos="fade-down" className='flex justify-between items-center px-5  py-5 bg-amber-50 gap-5'>
       <h1  className='font-mono text-2xl font-bold'>PORTFOLIO.</h1>
-      <ul  className='relative flex flex-wrap justify-center gap-5 lg:gap-8 font-bold text-2xl text-gray-500 rounded-2xl border-2 p-2 w-7xl border-black backdrop-blur-2xl- backdrop-brightness-200'>
+      <ul  className='relative flex flex-wrap justify-center gap-5  font-bold text-2xl text-gray-500 rounded-2xl border-2 p-2 w-7xl border-black backdrop-blur-2xl- backdrop-brightness-200'>
        <li><a className=' hover:text-blue-500 hover:text-shadow-[0px_0px_10px_#3b82f6] relative after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 after:bg-blue-500 after:transition-all  hover:after:w-full ' href="">Home</a></li>
        <li><a className=' hover:text-blue-500 hover:text-shadow-[0px_0px_10px_#3b82f6] relative after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 after:bg-blue-500 after:transition-all  hover:after:w-full ' href="#skills">Skills</a></li>
        <li><a className=' hover:text-blue-500 hover:text-shadow-[0px_0px_10px_#3b82f6] relative after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 after:bg-blue-500 after:transition-all  hover:after:w-full ' href="#pro">Projects</a></li>  
