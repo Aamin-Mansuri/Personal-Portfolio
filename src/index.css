@@ -5,17 +5,10 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-    background-color: #fffbeb;
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-*{
-  scroll-behavior: smooth;
-}
 
+body{
+  overflow-x: hidden;
+}
 
 /* ---------------- NAVBAR ---------------- */
 
@@ -281,7 +274,7 @@ body{
        
         border-color: transparent;
       }
-    } 
+    }
 
   #orange{
     width: 350px;
@@ -354,7 +347,7 @@ body{
     width: 280px;
     text-align: center;   
   }
-   
+  
   #web{
     border-right: black 2px solid;
     overflow: hidden;
@@ -378,10 +371,9 @@ body{
        
         border-color: transparent;
       }
-    } 
+    }
    
-} 
-
+}
 
 /* ---------------- ABOUT SECTION ---------------- */
 
@@ -480,6 +472,9 @@ body{
     margin-top: 80px;
     padding: 0px;
   }
+  #ab{
+    text-align: center;
+  }
   #about p{
     font-size: 1rem;
     line-height: 1.8;
@@ -510,6 +505,9 @@ body{
     margin-top: 80px;
     padding: 0px;
   }
+  #ab{
+    text-align: center;
+  }
   #about h1{  
     font-size: 2rem !important;
   }
@@ -534,66 +532,32 @@ body{
 
 /* ---------------- SKILLS ---------------- */
 
-@media (max-width: 1980px){
- #t-div{   
-    padding-left: 3%;  
-    margin: 0%;
-    
-    }
-  #s-title{
-    
-    font-size: 5rem;
-  }
-
- 
-}
-
 @media (max-width: 1200px){
- #t-div{   
-    padding-left: 3%;  
-    margin: 0%;
-    
-    }
-  #s-title{
-    
-    font-size: 5rem;
-  }
 
  
 }
- 
-
 
 @media (max-width: 768px){
-  
-#t-div{   
-    padding-left:  5%;  
-    margin: 0%;
-    
-    }
-  #s-title{
-    
-    font-size: 2.5rem;
-  }
 
  
 }
 
 @media (max-width: 480px){
 
-
+  #skills{
+    padding: 2px;
+  }
   
   #skills img{
     width: 60px;
   }
   #s-title{
-    
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  #t-div{   
-    padding-left:  10%;  
+  #t-div{
+    padding-left: 2%;
     margin: 0%;
-    
+    text-align: center;
     }
 
   
@@ -663,7 +627,7 @@ body{
 }
 /* ---------------- CONTACT SECTION ---------------- */
 
-@media (max-width: 1500px){
+@media (max-width: 1200px){
 
   #con ul{
     gap: 40px !important;
@@ -677,25 +641,6 @@ body{
     padding-left: 20px;
     padding-right: 20px;
   }
-   #c-black{
-    height: 80px;
-    width: 1505px;
-  }
-  #c-red{
-    height: 80px;
-    width: 1505px;
-  }
-  #red-contant{
-    
-    height: 78px;
-    width: 1500px;
-   justify-content: center;
-   align-items: center;
-    display: flex;
- 
-   
-  }
-
 
 }
 
@@ -713,25 +658,6 @@ body{
 
   #con .pr-18{
     padding-right: 0 !important;
-  }
-   #c-black{
-    height: 80px;
-    width: 995px;
-  }
-  #c-red{
-    height: 80px;
-    width: 995px;
-  }
-  #red-contant{
-    
-    height: 78px;
-    width: 1000px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-   align-items: center;
- 
-   
   }
 
 }
@@ -760,22 +686,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px !important;
-  }
-  #c-black{
-    height: 80px;
-    width: 770px;
-  }
-  #c-red{
-    height: 80px;
-    width: 770px;
-  }
-  #red-contant{
-    
-    height: 68px;
-    width: 770px;
-    overflow: hidden;
- 
-   
   }
 
 }
@@ -814,17 +724,5 @@ body{
   #con .gap-110{
     width: 100%;
   }
-  #c-black{
-    height: 60px;
-    width: 480px;
-  }
-  #c-red{
-    height: 60px;
-    width: 480px;
-  }
-  #red-contant{
-    height: 68px;
-    width: 400px;
-    overflow: hidden;
-  }
+
 }

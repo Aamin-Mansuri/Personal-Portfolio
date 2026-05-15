@@ -14,8 +14,7 @@ function App() {
     <Navbar/>
     <Home/>
     <About />
-    <Skill/>
-  
+    <Skill/> 
     <Project />
     <Me/>
 

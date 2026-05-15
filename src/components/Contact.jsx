@@ -7,7 +7,7 @@ const Contact = () => {
               <div id='c-black' className='w-screen mt-28 bg-black h-32 rotate-3 relative right-1'>
               </div>
               <div id='c-red'className='w-screen mt-28 bg-[#FF5858] h-32 -rotate-4 absolute -right-1.5 top-1.5 flex justify-center items-center '>
-                <ul id='red-contant' data-aos="fade-right" className='flex justify-around gap-36 '>
+                <ul id='red-contan' data-aos="fade-right" className='flex justify-around gap-36 '>
                     <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" /><p>HTML</p></li>
                     <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" /><p>CSS</p></li>
                     <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />JavaScirpt</li>
@@ -23,7 +23,7 @@ const Contact = () => {
                </div>
               <div className='text-center'>
                 <p data-aos="fade-up" className='font-medium font-sans text-2xl'>Drop me an email:</p>
-                <h1 data-aos="fade-up"><a  className='font-bold font-sans text-3xl' href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCGDWbgtDnxFWhNNnmtPRNfTjDMnGffLwxSgDrrRcmDKzvTRLCWZKTTfQQgtnSqkzdDWpL">aaminmansuri988@gmail.com</a></h1>
+                <h1 data-aos="fade-up"><a  className='font-bold font-sans text-3xl' href="mailto:aaminmansuri988@gmail.com">aaminmansuri988@gmail.com</a></h1>
               </div>
 
               <div className='flex justify-center gap-110  p-2 pb-8 pt-6 border-t-2 '>

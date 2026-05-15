@@ -1,3 +1,12 @@
+body{
+    background-color: #fffbeb;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+*{
+    scroll-behavior: smooth;
+}
 
 /* 
 #web{
@@ -25,7 +34,7 @@
        
         border-color: transparent;
       }
-}
+} */
 
 #para,
 #helo{
@@ -41,5 +50,5 @@
     opacity: 1;
     transform: translateX(0px);
   }
-} */
+}
 
