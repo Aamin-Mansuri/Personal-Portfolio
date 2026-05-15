@@ -17,8 +17,8 @@ const Skills = () => {
 	AOS.init();
 	return (
 		<div id="skills" className=" mt-14">
-			<div className=" pl-36 flex items-start flex-col">
-				<h1 data-aos="fade-right" className="text-7xl font-sans font-black ">SKILLS</h1>
+			<div id='t-div' className=" pl-36 flex  flex-col">
+				<h1 id='s-title' data-aos="fade-right" className="text-7xl font-sans font-black ">SKILLS</h1>
 			</div>
 
 			<div className="mt-16 flex flex-wrap w-100% justify-center gap-7">

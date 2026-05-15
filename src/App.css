@@ -8,22 +8,7 @@ body{
     scroll-behavior: smooth;
 }
 
-#navbar{
-  animation: NavJump 0.5s ease-in forwards;
-    
-}
-
-@keyframes NavJump {
-  from{
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  to{
-    transform: translateY(0px);
-    opacity:1;
-  }
-}
-
+/* 
 #web{
     
     border-right: black 2px solid;
@@ -49,7 +34,7 @@ body{
        
         border-color: transparent;
       }
-}
+} */
 
 #para,
 #helo{
