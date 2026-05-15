@@ -1,14 +1,5 @@
-body{
-    background-color: #fffbeb;
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-}
-*{
-    scroll-behavior: smooth;
-}
 
-
+/* 
 #web{
     
     border-right: black 2px solid;
@@ -50,5 +41,5 @@ body{
     opacity: 1;
     transform: translateX(0px);
   }
-}
+} */
 
