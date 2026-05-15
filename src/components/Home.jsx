@@ -17,7 +17,7 @@ const Home = () => {
               <img className='w-64  mt-4 relative right-20 -rotate-6' src={myImage} alt="img" />
            </div>
          </div>
-      </div>
+    </div>
   )
 }
 
