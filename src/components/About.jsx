@@ -9,12 +9,12 @@ const About = () => {
       </div>
       <div id='ab-red' className='w-screen mt-28 bg-[#FF5858] h-32 -rotate-4 absolute -right-1.5 top-1.5 flex justify-center items-center '>
         <ul id='red-content' data-aos="fade-right" className='flex justify-around gap-36 '>
-            <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" /><p>HTML</p></li>
-            <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" /><p>CSS</p></li>
-            <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />JavaScirpt</li>
-            <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />ReactJS</li>
-            <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />BootStrap</li>
-            <li className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />NodeJS</li>
+            <li id='li-red' className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" /><p>HTML</p></li>
+            <li id='li-red' className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" /><p>CSS</p></li>
+            <li id='li-red' className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />JavaScirpt</li>
+            <li id='li-red4' className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />ReactJS</li>
+            <li id='li-red5' className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />BootStrap</li>
+            <li id='li-red6' className='flex justify-center items-center gap-2.5 text-white text-4xl font-medium'><img className='w-8 h-8' src={Hexa} alt="" />NodeJS</li>
         </ul> 
       </div>
       <div id='ab2' className='mt-56 pl-36 '>
