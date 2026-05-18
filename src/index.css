@@ -677,162 +677,238 @@ body{
 
 @media (max-width: 1200px){
 
-  #pro{
-    width: 100%;
-    padding-left: 30px !important;
-    padding-right: 30px;
-  }
-
-  #pro .w-170{
-    width: 100% !important;
-  }
 
 }
 
 @media (max-width: 992px){
-  #pro{
-    width: 100%;
-  }
+    #pro{
+  width: 100%;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+ #p-card-container{
+  justify-content: center;
+  flex-direction: row;
 
-  #pro .w-170{
-    flex-direction: column;
-    height: auto !important;
-  }
-
-  #pro img{
-    width: 100% !important;
-    height: auto !important;
-  }
-
+  flex-wrap: wrap;
+  gap: 20px;
+  
+ }
+ #p-cards{
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  flex-direction: column;
+ 
+ }
+ #p-h{
+  padding-left: 15px;
+  font-size: 4rem;
+ }
+ #card-title{
+   font-size: 1rem;
+ }
+ #c-content{
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ #p-img{
+  width: 100%;
+ }
+ 
+ 
 }
 
 @media (max-width: 768px){
-
-  #pro h1{
-    font-size: 2.5rem !important;
-  }
-
-  #pro .w-100{
-    width: 100% !important;
-  }
+  #pro{
+  width: 100%;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+ #p-card-container{
+  justify-content: center;
+  gap: 20px;
+  
+ }
+ #p-cards{
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  flex-direction: column;
+ 
+ }
+ #p-h{
+  padding-left: 15px;
+  font-size: 4rem;
+ }
+ #card-title{
+   font-size: 1rem;
+ }
+ #c-content{
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ #p-img{
+  width: 100%;
+ }
+ 
 
 }
 
 @media (max-width: 480px){
-  #pro{
-    width: 100%;
-  }
-
-  #pro{
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-  #pro h1{
-    font-size: 2rem !important;
-  }
-
-  #pro p{
-    font-size: 0.9rem !important;
-  }
-
-  #pro button{
-    width: 100%;
-    justify-content: center;
-  }
-
+ #pro{
+  width: 100%;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+ }
+ #p-card-container{
+  justify-content: center;
+  gap: 20px;
+  
+ }
+ #p-cards{
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  flex-direction: column;
+ 
+ }
+ #p-h{
+  padding-left: 15px;
+  font-size: 2rem;
+ }
+ #card-title{
+   font-size: 1rem;
+ }
+ #c-content{
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ #p-img{
+  width: 100%;
+ }
 }
 /* ---------------- CONTACT SECTION ---------------- */
 
 @media (max-width: 1200px){
-/* 
-  #con ul{
-    gap: 40px !important;
-    flex-wrap: wrap;
+
+  #footer{
+    width: 100%;
     justify-content: center;
-    padding: 20px;
+  }
+  #f-mail{
+    font-size: 2rem;
+  }
+  #l-foot{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+  }
+  #f-h1{
+    font-size: 5rem;
+  }
+  #f-bt{
+    padding: 0%;
+    margin: 0%;
+    gap: 25px;
+    flex-direction: row;
+    
+  }
+  #i-bt{
+    width: 200px;
   }
 
-  #con .gap-110{
-    gap: 40px !important;
-    padding-left: 20px;
-    padding-right: 20px;
-  } */
 
 }
 
 @media (max-width: 992px){
-/* 
-  #con h1{
-    font-size: 4rem !important;
-  }
 
-  #con .gap-110{
+  #footer{
+    width: 100%;
+    justify-content: center;
+  }
+  #f-mail{
+    font-size: 1.2rem;
+  }
+  #l-foot{
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 20px;
+   
   }
-
-  #con .pr-18{
-    padding-right: 0 !important;
-  } */
+  #f-h1{
+    font-size: 2.5rem;
+  }
+  #f-bt{
+    padding: 0%;
+    margin: 0%;
+    gap: 25px;
+    flex-direction: row;
+    
+  }
+  #i-bt{
+    width: 200px;
+  }
 
 }
 
 @media (max-width: 768px){
-/* 
-  #con h1{
-    font-size: 2.7rem !important;
-    line-height: 1.3;
-  }
 
-  #con ul{
-    gap: 25px !important;
-  }
-
-  #con li{
-    font-size: 1.5rem !important;
-  }
-
-  #con .text-3xl{
-    font-size: 1.5rem !important;
-    word-break: break-word;
-  }
-
-  #con .pr-18{
-    flex-wrap: wrap;
+  #footer{
+    width: 100%;
     justify-content: center;
-    gap: 20px !important;
-  } */
-
+  }
+  #f-mail{
+    font-size: 1.2rem;
+  }
+  #l-foot{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+  }
+  #f-bt{
+    padding: 0%;
+    margin: 0%;
+    gap: 5px;
+    flex-direction: column;
+    
+  }
+  #i-bt{
+    width: 300px;
+  }
 }
 
 @media (max-width: 480px){
 
-/* 
-  #con p{
-    font-size: 1rem !important;
-  }
-
-  #con li{
-    font-size: 1rem !important;
-  }
-
-  #con .text-3xl{
-    font-size: 1.1rem !important;
-  }
-
-  #con button{
-    width: 100%;
-  }
-
-  #con .pr-18{
-    width: 100%;
-    flex-direction: column;
-  }
-
-  #con .gap-110{
-    width: 100%;
-  } */
   #footer{
     width: 100%;
     justify-content: center;
