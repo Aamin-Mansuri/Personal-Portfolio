@@ -3,7 +3,7 @@ import Hexa from '../assets/hexagon.png'
 
 const Contact = () => {
   return (
-    <div id="about" className=' relative overflow-x-hidden mt-14'>       
+    <div id="about" className=' relative overflow-x-hidden mt-14 w-screen'>       
       <div  id='ab-black' className='w-screen mt-28 bg-black h-32 rotate-3 relative right-1'>
       </div>
       <div id='ab-red' className='w-screen mt-28 bg-[#FF5858] h-32 -rotate-4 absolute -right-1.5 top-1.5 flex justify-center items-center '>

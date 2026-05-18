@@ -16,7 +16,7 @@ import vscode from '../assets/vscode.png';
 const Skills = () => {
 	AOS.init();
 	return (
-		<div id="skills" className=" mt-14">
+		<div id="skills" className=" mt-14 w-screen">
 			<div id='t-div' className=" pl-36 flex  flex-col">
 				<h1 id='s-title' data-aos="fade-right" className="text-7xl font-sans font-black ">SKILLS</h1>
 			</div>

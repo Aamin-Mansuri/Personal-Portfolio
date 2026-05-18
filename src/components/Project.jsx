@@ -10,7 +10,7 @@ import git from '../assets/github.png'
 
 const Project = () => {
   return (
-    <div id='pro' className='pt-28  '>
+    <div id='pro' className='pt-28  w-screen'>
         <div className='font-black text-7xl '>
             <h1 id='p-h' data-aos="fade-right" className='pl-32'>TAKE A LOOK <br /> AT MY PROJECTS</h1>
         </div>
