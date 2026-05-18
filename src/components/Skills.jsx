@@ -23,68 +23,68 @@ const Skills = () => {
 
 			<div id='card-container' className="mt-16 flex flex-wrap w-100% justify-center gap-7">
 				{/* card 1 */}
-				<div id='s-cards' data-aos="zoom-in-up" className=' hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-amber-600 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className=' hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-amber-600 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={Html} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>HTML</h1>
 				</div>
 				{/* card 2 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-blue-500 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-blue-500 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={css} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans' className='text-2xl font-bold text-white font-sans'>CSS</h1>
 				</div>
 				{/* card 3 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-yellow-500 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-yellow-500 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={js} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>JavaScript</h1>
 				</div>
 				{/* card 4 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-cyan-300 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-cyan-300 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={react} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>ReactJS</h1>
 				</div>
 				{/* card 5 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-green-800 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-green-800 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={node} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>NodeJS</h1>
 				</div>
 				{/* card 6 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-gray-900 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-gray-900 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={Express} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>Express JS</h1>
 				</div>
 				{/* card 7 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-green-600 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-green-600 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={mongo} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>MongoDB</h1>
 				</div>
 				{/* card 8 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-red-800 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-red-800 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={mongoo} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>Mongoose</h1>
 				</div>
 				{/* card 9 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-black w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-black w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={boot} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>BootStrap</h1>
 				</div>
 				{/* card 10 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-cyan-600 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-cyan-600 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={tailwind} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>Tailwind CSS</h1>
 				</div>
 				{/* card 11 */}
-				<div id='s-cards' data-aos="zoom-in-up"  className='hover:scale-[1.1] flex flex-col justify-center items-center gap-3.5 border-4 rounded-2xl p-5 border-black w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up"  className='hover:scale-[1.1] flex flex-col justify-center items-center gap-3.5 border-4 rounded-2xl p-5 border-black w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img className='w-35' src={api} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans '>RESTful APIs</h1>
 				</div>
 
 				{/* card 12 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-cyan-600 w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-cyan-600 w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={vscode} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>VS code</h1>
 				</div>
 				{/* card 13 */}
-				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-black w-50 h-58 bg-gray-800'>
+				<div id='s-cards' data-aos="zoom-in-up" className='hover:scale-[1.1] flex flex-col justify-center items-center gap-2.5 border-4 rounded-2xl p-5 border-black w-50 h-58 bg-gray-800 transition-transform duration-500 ease-linear'>
 					<img src={github} alt="" />
 					<h1 className='text-2xl font-bold text-white font-sans'>GitHub</h1>
 				</div>
