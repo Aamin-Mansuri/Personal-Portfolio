@@ -7,6 +7,7 @@ import Skill from './components/Skills'
 import Project from './components/Project'
 import Me from './components/Contact'
 
+
 function App() {
   return (
     <>
