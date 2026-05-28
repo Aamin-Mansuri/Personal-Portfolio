@@ -95,6 +95,56 @@ body{
 
 /* ---------------- HOME SECTION ---------------- */
 
+@media (max-width: 1900px){
+    #web{       
+    border-right: black 2px solid;
+    overflow: hidden;
+    white-space: nowrap;
+    /* width: 100% !important; */
+    animation: Letter 4s infinite steps(16) alternate,  blink .7s infinite linear ;
+    font-size: 3.5rem;
+  }
+  #home-part{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2px;
+  }
+  #r-h1{
+    font-size: 4rem;
+  }
+
+  #orange{
+    height: 500px;
+  }
+  #orange img{
+    height: 450px;
+  }
+  
+  #nav-r img{
+    position:relative;
+    left: 0%;
+  }
+  @keyframes Letter {
+    from{      
+        
+       width: 0px;
+    }
+    to{
+        
+        width: 580px;
+    }  
+  }
+ @keyframes blink{
+      50%{
+       
+        border-color: transparent;
+      }
+    }
+   
+}
+
+
 @media (max-width: 1500px){
     #web{       
     border-right: black 2px solid;

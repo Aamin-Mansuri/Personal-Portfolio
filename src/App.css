@@ -7,14 +7,14 @@ body {
 * {
   scroll-behavior: smooth;
 }
-
+/* 
 #web {
   border-right: black 2px solid;
   overflow: hidden;
   white-space: nowrap;
   animation:
-    Letter 4s infinite steps(14) alternate,
-    blink 0.7s infinite linear;
+  Letter 4s infinite steps(14) alternate,
+  blink 0.7s infinite linear;
 }
 
 @keyframes Letter {
@@ -30,7 +30,7 @@ body {
   50% {
     border-color: transparent;
   }
-}
+} */
 
 #para,
 #helo {
