@@ -10,7 +10,7 @@ const Navbar = () => {
        <li><a id='hoo' className=' hover:text-blue-500 hover:text-shadow-[0px_0px_10px_#3b82f6] relative after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 after:bg-blue-500 after:transition-all  hover:after:w-full ' href="">Home</a></li>
        <li><a className=' hover:text-blue-500 hover:text-shadow-[0px_0px_10px_#3b82f6] relative after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 after:bg-blue-500 after:transition-all  hover:after:w-full ' href="#skils">Skills</a></li>
        <li><a className=' hover:text-blue-500 hover:text-shadow-[0px_0px_10px_#3b82f6] relative after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 after:bg-blue-500 after:transition-all  hover:after:w-full ' href="#pro">Projects</a></li>  
-       <li><a className=' hover:text-blue-500 hover:text-shadow-[0px_0px_10px_#3b82f6] relative after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 after:bg-blue-500 after:transition-all  hover:after:w-full ' href="footer#">Contact</a></li>      
+       <li><a className=' hover:text-blue-500 hover:text-shadow-[0px_0px_10px_#3b82f6] relative after:absolute after:left-0 after:-bottom-1 after:h-1 after:w-0 after:bg-blue-500 after:transition-all  hover:after:w-full ' href="#footer">Contact</a></li>      
       </ul>
       <button id='nav-bt' className='p-4 bg-black text-white rounded-3xl text-2xs w-52 m font-medium uppercase hover:bg-blue-500 flex justify-center items-center'><a className='flex gap-1.5' href={resume} download={resume} >Download CV <img id='bt-img' className='w-5' src={File} alt="" /></a></button>
     </div>

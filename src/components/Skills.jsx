@@ -25,7 +25,7 @@ const Skills = () => {
 
 			<div id='card-container' className="mt-16 flex flex-wrap w-100% justify-center gap-7 flex-1">
 				{/* card 1 */}
-				<PropsSkill name="HTML" image={Html} bgColor="border-amber-500"/>
+				<PropsSkill name="HTML" image={Html} bgColor="border-amber-500" />
 				{/* card 2 */}
 				<PropsSkill name="Css" image={css} bgColor="border-blue-500"/>
 				{/* card 3 */}

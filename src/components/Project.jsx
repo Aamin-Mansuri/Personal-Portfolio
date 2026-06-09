@@ -8,6 +8,7 @@ import weather from "../assets/weather.png";
 import digital from "../assets/digital.png";
 import git from "../assets/github.png";
 import PropsProject from "./PropsProject";
+import Bee from "../assets/Bee.png";
 
 const Project = () => {
   return (
@@ -78,6 +79,13 @@ const Project = () => {
               calculations. Implemented smooth animations, responsive circular
               layout, and clean UI styling to create an interactive and visually
               appealing clock interface."
+        />
+         <PropsProject
+          aos="flip-left"
+          title="The React Bee Game"
+          img={Bee}
+          link="https://github.com/Aamin-Mansuri/React-Bee-Game.git"
+          para="Slap The Bee is a fun React game where players try to click a moving bee before it escapes. The bee randomly changes its position and rotation using GSAP animations. Sound effects and background music make the gameplay more engaging and entertaining."
         />
       </div>
     </div>

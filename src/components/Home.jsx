@@ -3,7 +3,7 @@ import myImage from '../assets/sign.png'
 import coder from '../assets/coder.gif'
 const Home = () => {
   return (
-    <div id='home'className=' flex  items-center justify-center px-5 w-screen py-10 gap-10 '>
+    <div id='home'className=' flex items-center justify-center px-5 py-10 gap-10 '>
       <div id='home-part' className='flex items-center gap-10 '>
         <div id='orange' data-aos="flip-right" className=' bg-amber-500 rounded-2xl flex justify-center items-center p-6'>
           <img className='rounded-2xl' src={coder} alt="" />
