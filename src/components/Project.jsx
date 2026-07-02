@@ -8,10 +8,16 @@ import weather from "../assets/weather.png";
 import digital from "../assets/digital.png";
 import Bee from "../assets/Bee.png";
 import PropsProject from "./PropsProject";
+import commerce from "../assets/Commrce.png"
 
 const Project = () => {
-  // 1. Project Data Array (Clean & Easy to Maintain)
   const projectList = [
+    {
+      title: "E-Commerce WebSite",
+      img: commerce,
+      link:"https://github.com/Aamin-Mansuri/E-Commerce-Web-Project.git",
+      para: "Developed a responsive E-Commerce website using React.js with Login/Signup authentication. Implemented Add to Cart functionality using Context API for efficient global state management and seamless user experience."
+    },
     {
       title: "Voice Assistant Web App",
       img: Voice,

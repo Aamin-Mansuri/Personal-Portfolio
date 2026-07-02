@@ -108,9 +108,11 @@ const Home = () => {
                 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]
               "
             >
-              <span className="relative z-10 flex items-center gap-2">
+              <a href="#about">
+              <span className="relative z-10 flex items-center gap-2 ">
                 About Me <span className="group-hover:translate-x-2 transition-transform duration-300">➫</span>
               </span>
+              </a>
               <div className="absolute inset-0 bg-blue-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             </button>
 

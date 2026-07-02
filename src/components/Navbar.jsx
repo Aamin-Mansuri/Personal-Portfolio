@@ -50,7 +50,7 @@ const Navbar = () => {
             className="flex items-center gap-2 bg-black text-white px-6 py-2.5 rounded-full font-medium hover:bg-blue-500 transition-all duration-300 hover:scale-105"
           >
             Download CV
-            <img src={File} alt="download" className="w-4 h-4 invert" />
+            <img src={File} alt="download" className="w-4 h-4 " />
           </a>
         </div>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
               className="flex items-center gap-2 bg-black text-white px-8 py-3 rounded-full font-medium"
             >
               Download CV
-              <img src={File} alt="download" className="w-4 h-4 invert" />
+              <img src={File} alt="download" className="w-4 h-4  " />
             </a>
           </li>
         </ul>
