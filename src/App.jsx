@@ -5,21 +5,22 @@ import Home from './components/Home'
 import About from './components/About'
 import Skill from './components/Skills'
 import Project from './components/Project'
-import Me from './components/Contact'
+import Contact from './components/Contact'
+
 
 
 function App() {
   return (
-    <>
+    <div className=''>
     
     <Navbar/>
     <Home/>
     <About />
     <Skill/> 
     <Project />
-    <Me/>
+    <Contact/>
 
-    </>
+    </div>
   )
 }
 

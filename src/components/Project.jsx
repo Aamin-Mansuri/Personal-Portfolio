@@ -6,89 +6,111 @@ import Movie from "../assets/movie.png";
 import clock from "../assets/clock.png";
 import weather from "../assets/weather.png";
 import digital from "../assets/digital.png";
-import git from "../assets/github.png";
-import PropsProject from "./PropsProject";
 import Bee from "../assets/Bee.png";
+import PropsProject from "./PropsProject";
 
 const Project = () => {
+  // 1. Project Data Array (Clean & Easy to Maintain)
+  const projectList = [
+    {
+      title: "Voice Assistant Web App",
+      img: Voice,
+      link: "https://github.com/Aamin-Mansuri/voice-as-js-project-6.git",
+      para: "Built a voice assistant using HTML, CSS and JavaScript with speech recognition and text-to-speech features.",
+    },
+    {
+      title: "Weather App",
+      img: weather,
+      link: "https://github.com/Aamin-Mansuri/wather-app-js-project-5.git",
+      para: "Designed a real-time weather dashboard with live temperature, humidity and location-based search.",
+    },
+    {
+      title: "Loan App UI",
+      img: Loan,
+      link: "https://github.com/Aamin-Mansuri/web-kreditbee-project-2.git",
+      para: "Designed and developed a responsive Loan Application UI with a clean modern interface.",
+    },
+    {
+      title: "Movie Search App",
+      img: Movie,
+      link: "https://github.com/Aamin-Mansuri/Movie-Search-Api-Project.git",
+      para: "Created a movie searching application using React and external APIs.",
+    },
+    {
+      title: "The React Bee Game",
+      img: Bee,
+      link: "https://github.com/Aamin-Mansuri/React-Bee-Game.git",
+      para: "Fun React game with GSAP animations, sound effects and moving objects.",
+    },
+    {
+      title: "Digital Clock",
+      img: digital,
+      link: "https://github.com/Aamin-Mansuri/clock-js-project.git",
+      para: "Created a modern responsive Digital Clock using HTML, CSS and JavaScript.",
+    },
+  ];
+
   return (
-    <div id="pro" className="pt-28  w-screen">
-      <div className="font-black text-7xl ">
-        <h1 id="p-h" data-aos="fade-right" className="pl-32">
-          TAKE A LOOK <br /> AT MY PROJECTS
-        </h1>
+    <section
+      id="pro"
+      className="w-full py-20 px-6 sm:px-10 md:px-16 lg:px-24"
+    >
+      <div className="max-w-7xl mx-auto">
+        {/* Heading */}
+        <div className="mb-16">
+          <p 
+            data-aos="fade-up" 
+            className="text-blue-500 font-bold uppercase tracking-widest text-sm mb-2"
+          >
+            My Portfolio
+          </p>
+          <h1
+            data-aos="fade-right"
+            className="font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-gray-900"
+          >
+            TAKE A LOOK <br />
+            AT MY <span className="text-blue-600">PROJECTS</span>
+          </h1>
+          <div className="w-24 h-2 bg-black mt-4 rounded-full"></div>
+        </div>
+
+        {/* Project Cards Container */}
+        <div
+          className="
+            flex flex-col 
+            gap-12 md:gap-16 lg:gap-24 
+            items-center
+          "
+        >
+          {projectList.map((project, index) => (
+            <PropsProject
+              key={index}
+              // Alternates AOS animation based on index
+              aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+              title={project.title}
+              img={project.img}
+              link={project.link}
+              para={project.para}
+              // Adding a prop to handle alternating layout if your PropsProject supports it
+              isEven={index % 2 === 0}
+            />
+          ))}
+        </div>
+
+        {/* GitHub Call to Action */}
+        <div className="mt-24 text-center" data-aos="zoom-in">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Want to see more code?</h2>
+          <a 
+            href="https://github.com/Aamin-Mansuri" 
+            target="_blank" 
+            rel="noreferrer"
+            className="inline-block bg-black text-white px-10 py-4 rounded-full font-bold hover:bg-blue-600 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+          >
+            Explore GitHub ➫
+          </a>
+        </div>
       </div>
-      <div
-        id="p-card-container"
-        className="mt-16 flex flex-wrap w-100% gap-14 justify-center"
-      >
-        {/* project card 1 */}
-        <PropsProject
-          aos="flip-left"
-          title="Voice Assistant Web App"
-          img={Voice}
-          link="https://github.com/Aamin-Mansuri/voice-as-js-project-6.git"
-          para="Built a voice assistant using the HTML CSS JavaScript with speech recognition and text-to-speech features. Users can ask questions, search information, and interact through voice commands in real time."
-        />
-
-        {/* project card 2 */}
-        <PropsProject
-          aos="flip-right"
-          title="Weather App"
-          img={weather}
-          link="https://github.com/Aamin-Mansuri/wather-app-js-project-5.git"
-          para="Designed a real-time weather dashboard that displays live temperature, humidity, wind speed, and weekly forecasts using weather APIs. Includes responsive UI and location-based search functionality."
-        />
-
-        {/* project card 3 */}
-        <PropsProject
-          aos="flip-right"
-          title="Loan App UI"
-          img={Loan}
-          link="https://github.com/Aamin-Mansuri/web-kreditbee-project-2.git"
-          para="Designed and developed a responsive Loan Application UI using HTML and CSS with a clean and modern interface."
-        />
-        {/* project card 4 */}
-        <PropsProject
-          aos="flip-left"
-          title="Movie Search App"
-          img={Movie}
-          link="https://github.com/Aamin-Mansuri/Movie-Search-Api-Project.git"
-          para="Created a responsive movie searching application using React and external movie APIs. Users can search movies, view ratings, trailers, and save favorites with secure authentication."
-        />
-        {/* project card 5 */}
-         <PropsProject
-          aos="flip-right"
-          title="Digital Clock"
-          img={digital}
-          link="https://github.com/Aamin-Mansuri/clock-js-project.git"
-          para="Created a responsive Digital Clock using HTML, CSS, and JavaScript
-              with a modern UI design. The clock displays real-time hours,
-              minutes, and seconds with smooth updates, stylish typography, and
-              responsive layout for different screen sizes."
-        />
-
-        {/* project card 6 */}
-         <PropsProject
-          aos="flip-left"
-          title="Analog Clock"
-          img={clock}
-          link="https://github.com/Aamin-Mansuri/clock-js-project.git"
-          para=" Designed and developed an Analog Clock using HTML, CSS, and
-              JavaScript featuring rotating clock hands based on real-time
-              calculations. Implemented smooth animations, responsive circular
-              layout, and clean UI styling to create an interactive and visually
-              appealing clock interface."
-        />
-         <PropsProject
-          aos="flip-left"
-          title="The React Bee Game"
-          img={Bee}
-          link="https://github.com/Aamin-Mansuri/React-Bee-Game.git"
-          para="Slap The Bee is a fun React game where players try to click a moving bee before it escapes. The bee randomly changes its position and rotation using GSAP animations. Sound effects and background music make the gameplay more engaging and entertaining."
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 

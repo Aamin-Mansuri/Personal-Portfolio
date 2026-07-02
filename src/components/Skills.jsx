@@ -1,59 +1,95 @@
-import React from 'react';
-import Html from '../assets/html.png';
-import css from '../assets/css.png';
-import js from '../assets/js.png';
-import react from '../assets/react.png';
-import node from '../assets/node.png';
-import mongo from '../assets/mongo.png';
-import mongoo from '../assets/mongoose.png';
-import boot from '../assets/boot.png';
-import api from '../assets/api.png';
-import Express from '../assets/ex.png';
-import github from '../assets/github.png';
-import tailwind from '../assets/taiwind.png';
-import vscode from '../assets/vscode.png';
-import PropsSkill from './PropsSkill';
+import React from "react";
+import Html from "../assets/html.png";
+import css from "../assets/css.png";
+import js from "../assets/js.png";
+import react from "../assets/react.png";
+import node from "../assets/node.png";
+import mongo from "../assets/mongo.png";
+import mongoo from "../assets/mongoose.png";
+import boot from "../assets/boot.png";
+import api from "../assets/api.png";
+import Express from "../assets/ex.png";
+import github from "../assets/github.png";
+import tailwind from "../assets/taiwind.png";
+import vscode from "../assets/vscode.png";
+import PropsSkill from "./PropsSkill";
 
 const Skills = () => {
-	AOS.init();
-	return (
-		<div id="skills" className=" mt-14 w-screen">
-			<div id='t-div' className=" pl-36 flex  flex-col">
-				<h1 id='s-title' data-aos="fade-right" className="text-7xl font-sans font-black ">SKILLS</h1>
-			</div>
-			
+  // Data array for cleaner code and easier animation handling
+  const skillData = [
+    { name: "HTML", image: Html, color: "border-orange-500" },
+    { name: "CSS", image: css, color: "border-blue-500" },
+    { name: "JavaScript", image: js, color: "border-yellow-400" },
+    { name: "React JS", image: react, color: "border-cyan-400" },
+    { name: "Node JS", image: node, color: "border-green-600" },
+    { name: "Express JS", image: Express, color: "border-gray-800" },
+    { name: "MongoDB", image: mongo, color: "border-green-500" },
+    { name: "Mongoose", image: mongoo, color: "border-red-700" },
+    { name: "Tailwind", image: tailwind, color: "border-sky-400" },
+    { name: "Bootstrap", image: boot, color: "border-purple-600" },
+    { name: "REST API", image: api, color: "border-blue-400" },
+    { name: "GitHub", image: github, color: "border-black" },
+    { name: "VS Code", image: vscode, color: "border-blue-600" },
+  ];
 
-			<div id='card-container' className="mt-16 flex flex-wrap w-100% justify-center gap-7 flex-1">
-				{/* card 1 */}
-				<PropsSkill name="HTML" image={Html} bgColor="border-amber-500" />
-				{/* card 2 */}
-				<PropsSkill name="Css" image={css} bgColor="border-blue-500"/>
-				{/* card 3 */}
-				<PropsSkill name="JavaScript" image={js} bgColor="border-yellow-500" />
-				{/* card 4 */}
-				<PropsSkill name="React JS" image={react} bgColor="border-cyan-300" />
-				{/* card 5 */}
-				<PropsSkill name="Node Js" image={node} bgColor="border-green-800" />
-				{/* card 6 */}
-				<PropsSkill name="Express Js" image={Express} bgColor="border-gray-900" />
-				{/* card 7 */}
-				<PropsSkill name="MongoDB" image={mongo} bgColor="border-green-600" />
-				{/* card 8 */}
-				<PropsSkill name="Mongoose" image={mongoo} bgColor="border-red-800" />
-				{/* card 9 */}
-				<PropsSkill name="BootStrap" image={boot} bgColor="border-black" />
-				{/* card 10 */}
-				<PropsSkill name="Tailwind CSS" image={tailwind} bgColor="border-cyan-600" />
-				{/* card 11 */}
-				<PropsSkill name="RESTful API's" image={api} bgColor="border-black" />
-				{/* card 12 */}
-				<PropsSkill name="VS Code" image={vscode} bgColor="border-cyan-600" />
-				{/* card 13 */}
-				<PropsSkill name="GitHub" image={github} bgColor="border-black" />
-			</div>
+  return (
+    <section
+      id="skills"
+      className="w-full min-h-screen py-20 px-6 sm:px-12 lg:px-24"
+    >
+      <div className="max-w-7xl mx-auto">
+        {/* Heading Section */}
+        <div className="flex flex-col mb-16 items-center lg:items-start text-center lg:text-left">
+          <h1
+            data-aos="fade-right"
+            className="text-5xl sm:text-6xl lg:text-8xl font-black tracking-tighter text-gray-900"
+          >
+            SKILLS
+          </h1>
+          <div 
+            data-aos="fade-right" 
+            data-aos-delay="200" 
+            className="w-24 h-2 bg-blue-500 mt-2 rounded-full"
+          ></div>
+          <p className="text-gray-500 mt-6 text-lg max-w-lg">
+            A list of technologies I use to bring digital ideas to life. 
+            Focused on the MERN Stack and modern CSS frameworks.
+          </p>
+        </div>
 
-		</div>
-	);
+        {/* Skills Grid */}
+        <div
+          className="
+            grid 
+            grid-cols-2      /* Mobile: 2 per row */
+            sm:grid-cols-3   /* Tablet: 3 per row */
+            md:grid-cols-4   /* Laptop: 4 per row */
+            lg:grid-cols-5   /* Desktop: 5 per row */
+            gap-4            /* Smaller gap on mobile */
+            sm:gap-8         /* Larger gap on bigger screens */
+            justify-items-center
+          "
+        >
+          {skillData.map((skill, index) => (
+            <div
+              key={skill.name}
+              data-aos="zoom-in"
+              data-aos-delay={index * 50} // Staggered entry animation
+              className="w-full flex justify-center"
+            >
+              <PropsSkill
+                name={skill.name}
+                image={skill.image}
+                bgColor={skill.color}
+                // If your PropsSkill doesn't have hover effects, 
+                // ensure it has a transition and scale-105 in its own code.
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Skills;

@@ -1,25 +1,145 @@
-import React from 'react'
-import myImage from '../assets/sign.png'
-import coder from '../assets/coder.gif'
+import React from "react";
+import Typewriter from "typewriter-effect"; // Import the library
+import myImage from "../assets/sign.png";
+import coder from "../assets/coder.gif";
+
 const Home = () => {
   return (
-    <div id='home'className=' flex items-center justify-center px-5 py-10 gap-10 '>
-      <div id='home-part' className='flex items-center gap-10 '>
-        <div id='orange' data-aos="flip-right" className=' bg-amber-500 rounded-2xl flex justify-center items-center p-6'>
-          <img className='rounded-2xl' src={coder} alt="" />
+    <section
+      id="home"
+      className="w-full min-h-screen flex items-center justify-center px-5 sm:px-10 md:px-16 lg:px-24 pt-20 pb-10 overflow-hidden "
+    >
+      <div
+        id="home-part"
+        className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 max-w-7xl w-full"
+      >
+        {/* Left Side: Image with Animated Border */}
+        <div
+          data-aos="zoom-in"
+          className="
+            relative
+            flex 
+            justify-center 
+            items-center 
+            w-full 
+            max-w-[300px] 
+            sm:max-w-[400px] 
+            md:max-w-[450px] 
+            lg:max-w-[500px]
+          "
+        >
+          {/* Decorative background element */}
+          <div className="absolute -inset-2 bg-gradient-to-r from-amber-500 to-orange-600 rounded-3xl rotate-6 opacity-20 blur-sm"></div>
+          
+          <div className="relative bg-amber-500 p-3 sm:p-5 rounded-3xl shadow-2xl">
+            <img
+              src={coder}
+              alt="coder animation"
+              className="rounded-2xl w-full h-auto"
+            />
           </div>
-            <div id='nav-r' className='flex flex-col gap-3 pt-15 w-180 '>
-              <p  data-aos="fade-right" className='text-lg font-sans font-medium'>Hello!, I Am <span>Aamin Mansuri</span></p>
-              <h1 id='r-h1' data-aos="fade-up-left" className='text-7xl font-extrabold '>MERN STACK</h1>    
-              <h1 id='r-h1' className='text-7xl font-extrabold w-full' id='web' data-aos="fade-up-left"> — WEB DEVELOPER </h1>           
-              <p id='r-para' data-aos="fade-right" className='mt-4 font-sans text-gray-500 text-lg'>Passionate MERN Stack Developer creating responsive and modern web applications.<br /> Building scalable and user-friendly web experiences with modern technologies.</p>
-              <button id='r-bt' data-aos="fade" className='rounded-3xl text-white bg-blue-500 text-2xs w-40 mt-5 py-3 hover:bg-black'><a  href="#about">About Me</a> ➫</button>
-              <img className='w-64  mt-4 relative right-20 -rotate-6' src={myImage} alt="img" />
-           </div>
-         </div>
+        </div>
+
+        {/* Right Content Side */}
+        <div className="flex flex-col gap-6 w-full text-center lg:text-left">
+          <div className="space-y-2">
+           
+            
+            <h2
+              data-aos="fade-right"
+              className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-800"
+            >
+              Hello!, I Am <span className="font-extrabold text-black">Aamin Mansuri</span>
+            </h2>
+
+            <h1
+              data-aos="fade-up"
+              className="font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-tighter"
+            >
+              MERN STACK
+            </h1>
+
+            <div 
+              data-aos="fade-up" 
+              data-aos-delay="200"
+              className="h-10 sm:h-16 md:h-20 flex justify-center lg:justify-start items-center"
+            >
+              <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 flex items-center gap-2">
+                <span className="text-black">—</span>
+                <span className="text-black">
+                  <Typewriter
+                    options={{
+                      strings: [
+                        "WEB DEVELOPER",
+                        "REACT DEVELOPER",
+                        "VIDEO EDITOR",
+                        "FULL STACK DEVELOPER",
+                      ],
+                      autoStart: true,
+                      loop: true,
+                      deleteSpeed: 50,
+                      delay: 80,
+                      wrapperClassName: "typewriter-text font-bold", 
+                      cursorClassName: "text-blue-500 font-light",
+                    }}
+                  />
+                </span>
+              </h2>
+            </div>
+          </div>
+
+          <p
+            data-aos="fade-right"
+            data-aos-delay="400"
+            className="text-gray-500 leading-relaxed text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0"
+          >
+            I specialize in building robust backends and pixel-perfect frontends.
+            Turning complex problems into elegant, scalable digital solutions.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 mt-4">
+            <button
+              data-aos="fade-up"
+              className="
+                group relative px-8 py-4 
+                bg-black text-white 
+                rounded-full font-bold
+                overflow-hidden transition-all duration-300
+                hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]
+              "
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                About Me <span className="group-hover:translate-x-2 transition-transform duration-300">➫</span>
+              </span>
+              <div className="absolute inset-0 bg-blue-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            </button>
+
+            <img
+              src={myImage}
+              alt="signature"
+              className="
+                w-32 sm:w-40 md:w-48
+                opacity-70 grayscale hover:grayscale-0
+                lg:-rotate-6 transition-all duration-500
+              "
+            />
+          </div>
+        </div>
       </div>
-  )
-}
 
-export default Home
+      <style>{`
+        .Typewriter__cursor {
+          font-weight: 200;
+          color: #3b82f6;
+          animation: blink 1s infinite;
+        }
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+      `}</style>
+    </section>
+  );
+};
 
+export default Home;
