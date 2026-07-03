@@ -73,7 +73,6 @@ const Home = () => {
                         "WEB DEVELOPER",
                         "REACT DEVELOPER",
                         "VIDEO EDITOR",
-                        "FULL STACK DEVELOPER",
                       ],
                       autoStart: true,
                       loop: true,

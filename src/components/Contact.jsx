@@ -87,7 +87,7 @@ const Contact = () => {
           {/* Back to top */}
           <div className="order-2 lg:order-3">
             <a 
-              href="#navbar" 
+              href="#home" 
               className="group flex items-center gap-2 font-bold text-white hover:text-blue-600 transition-colors"
             >
               BACK TO TOP 
