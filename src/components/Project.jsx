@@ -1,7 +1,7 @@
 import React from "react";
 import Voice from "../assets/voice.png";
 import Flight from "../assets/flight.png";
-import Loan from "../assets/loan.png";
+import Auth from "../assets/Auth.png";
 import Movie from "../assets/movie.png";
 import clock from "../assets/clock.png";
 import weather from "../assets/weather.png";
@@ -13,28 +13,28 @@ import commerce from "../assets/Commrce.png"
 const Project = () => {
   const projectList = [
     {
-      title: "E-Commerce WebSite",
-      img: commerce,
-      link:"https://github.com/Aamin-Mansuri/E-Commerce-Web-Project.git",
-      para: "Developed a responsive E-Commerce website using React.js with Login/Signup authentication. Implemented Add to Cart functionality using Context API for efficient global state management and seamless user experience."
-    },
-    {
       title: "Voice Assistant Web App",
       img: Voice,
       link: "https://github.com/Aamin-Mansuri/voice-as-js-project-6.git",
       para: "Built a voice assistant using HTML, CSS and JavaScript with speech recognition and text-to-speech features.",
     },
     {
+      title: "E-Commerce WebSite",
+      img: commerce,
+      link:"https://github.com/Aamin-Mansuri/E-Commerce-Web-Project.git",
+      para: "Developed a responsive E-Commerce website using React.js with Login/Signup authentication. Implemented Add to Cart functionality using Context API for efficient global state management and seamless user experience."
+    },
+    {
+      title: "Authentication App (Mern Stack)",
+      img: Auth,
+      link: "https://github.com/Aamin-Mansuri/Mern-Authentication-App.git",
+      para: "This comprehensive MERN stack authentication system provides a secure and modern user experience by integrating custom JWT login flows with seamless Google OAuth 2.0 capabilities. It features a responsive React dashboard and a robust Node.js backend, offering a production-ready foundation for secure identity management and protected data access",
+    },
+    {
       title: "Weather App",
       img: weather,
       link: "https://github.com/Aamin-Mansuri/wather-app-js-project-5.git",
       para: "Designed a real-time weather dashboard with live temperature, humidity and location-based search.",
-    },
-    {
-      title: "Loan App UI",
-      img: Loan,
-      link: "https://github.com/Aamin-Mansuri/web-kreditbee-project-2.git",
-      para: "Designed and developed a responsive Loan Application UI with a clean modern interface.",
     },
     {
       title: "Movie Search App",
