@@ -72,7 +72,6 @@ const Home = () => {
                       strings: [
                         "WEB DEVELOPER",
                         "REACT DEVELOPER",
-                        "VIDEO EDITOR",
                       ],
                       autoStart: true,
                       loop: true,

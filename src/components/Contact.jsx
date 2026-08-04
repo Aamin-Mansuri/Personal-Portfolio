@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const Contact = () => {
   useEffect(() => {
-    // Ensuring AOS works on mount
+   
     AOS.init({ duration: 1000, once: true });
   }, []);
 
@@ -15,7 +15,6 @@ const Contact = () => {
   return (
     <footer id="footer" className="relative overflow-hidden w-full pt-20">
       
-      {/* --- Rotated Tech Strip (Marquee) --- */}
       <div className="relative h-40 sm:h-48 flex items-center mb-20">
         <div className="absolute w-[110%] -left-[5%] bg-black h-24 sm:h-32 rotate-2 shadow-xl"></div>
         <div className="absolute w-[110%] -left-[5%] bg-[#FF5858] h-24 sm:h-32 -rotate-2 flex items-center overflow-hidden shadow-xl">
